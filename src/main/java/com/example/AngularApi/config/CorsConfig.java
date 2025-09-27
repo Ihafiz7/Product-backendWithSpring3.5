@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 public class CorsConfig {
-    @Value("${cross.allowed-origins:http://localhost:4200")
+    @Value("${cross.allowed-origins:http://localhost:4200}")
     private String[] crossOrigin;
 
     @Bean

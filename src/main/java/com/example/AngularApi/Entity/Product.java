@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -18,7 +19,7 @@ public class Product {
     private  Integer quantity;
     private Boolean available;
     private String supplierEmail;
-    private LocalDateTime manufacturingDate;
+    private LocalDate manufacturingDate;
     private LocalDateTime createdAt;
 
     @Enumerated(EnumType.STRING)
